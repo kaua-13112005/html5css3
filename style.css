@@ -6,22 +6,43 @@
     padding: 0;
 }
 
+/* importação */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
 /* documento css */
 
 
 body{
     background-color: red;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
 }
+
+/* Layout */
+.container{
+    margin: 0 auto;
+    background-color: #7f0;
+}
+
 
 @media (min-width: 576px) {
     body{
          background-color: #0ff;
+    }
+    /* \Layout */
+    .container{
+        max-width: 540px;
     }
 }
 
 @media (min-width: 768px) {
     body{
           background-color: #ffff00;
+    }
+      /* \Layout */
+      .container{
+        max-width: 720px;
     }
 }
 
@@ -31,11 +52,19 @@ body{
     body{
         background-color: #ff6600;
     }
+      /* \Layout */
+      .container{
+        max-width: 960px;
+    }
 }
 
 @media (min-width: 1200px) {
     body{
          background-color: #ff0000;
+    }
+      /* \Layout */
+      .container{
+        max-width: 1140px;
     }
 }
    
